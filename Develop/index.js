@@ -64,14 +64,15 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() {
-    inquirer.createPromptModule(questions).then((responses) => {
+async function init() {
+    console.log("Initializing the (Generated)README.md generator....");
+    try {
+        const responses = await inquirer.prompt(questions);
         const markdownContent = generateMarkdown(responses);
         writeToFile("README.md", markdownContent);
-    })
-    .catch((error) => {
+    } catch (error) {
         console.log(error);
-    });
+    }
 }
 
 // Function call to initialize app
