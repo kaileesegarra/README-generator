@@ -44,3 +44,5 @@ Contributions are always welcome. If you are interested in contributing to this 
 ## GitHub
 
 [Kailee's GitHub](https://github.com/kaileesegarra)
+
+If you have any questions, feel free to reach me at []
