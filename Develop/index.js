@@ -59,13 +59,13 @@ function writeToFile(fileName, data) {
         if (err) {
             return console.log(err);
         }
-        console.log("Success! The (Generated)README.md file is created.");
+        console.log("Success! The README.md file is created.");
     });
 }
 
 // TODO: Create a function to initialize app
 async function init() {
-    console.log("Initializing the (Generated)README.md generator....");
+    console.log("Initializing the README.md generator....");
     try {
         const responses = await inquirer.prompt(questions);
         const markdownContent = generateMarkdown(responses);
