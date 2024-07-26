@@ -36,4 +36,4 @@
   
   ## Questions
   If you have any questions, you can reach me at [test@example.com](mailto:test@example.com).
-  Visit my GitHub profile at [https://github.com/example](https://github.com/example).
+  Visit my GitHub profile at [https://github.com/test](https://github.com/test).
