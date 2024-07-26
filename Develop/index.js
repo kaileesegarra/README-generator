@@ -69,8 +69,17 @@ async function init() {
     try {
         const responses = await inquirer.prompt(questions);
         const markdownContent = generateMarkdown(responses);
-        writeToFile("README.md", markdownContent);
-    } catch (error) {
+
+        // Ensure the output directory exists
+        const outputDir = path.join(__dirname, 'output');
+        if (!fs.existsSync(outputDir)) {
+            fs.mkdirSync(outputDir);
+        }
+    
+        // Write the file to the output directory
+        const outputPath = path.join(outputDir, 'README.md');
+        writeToFile(outputPath, markdownContent);
+     } catch (error) {
         console.log(error);
     }
 }
