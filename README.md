@@ -16,17 +16,22 @@ The README.md Generator is a command-line application that dynamically generates
 ## Installation
 
 1. Clone the repository to your local machine.
-    ```sh
-    git clone <repository-url>
-    ```
+    
+    git clone <https://github.com/kaileesegarra/readme-generator.git>
+    
 2. Navigate to the project directory.
-    ```sh
+    
     cd READMEGenerator_Node.js_Module9_Challenge
-    ```
+    
 3. Install the necessary dependencies.
-    ```sh
-    npm install inquirer@8.2.4
-    ```
+    
+    npm i inquirer@8.2.4
+
+4. Run the Application:
+Finally, run your application with the following command:
+
+    node Develop/index.js
+    
 
 ## Usage
 To use the (Generated)README.md Generator, run the following command in your terminal:
